@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Một lời tri ân gửi đến quý Thầy Cô nhân ngày Nhà giáo Việt Nam 20/11.">
+  <title>Một lời tri ân, gửi bằng cả tấm lòng</title>
+  <link rel="stylesheet" href="./css/tri-an.css">
+  <script src="./js/tri-an.js" defer></script>
+</head>
+<body>
+  <div class="petal-field" aria-hidden="true">
+    <span class="petal petal--1"></span><span class="petal petal--2"></span>
+    <span class="petal petal--3"></span><span class="petal petal--4"></span>
+    <span class="petal petal--5"></span><span class="petal petal--6"></span>
+    <span class="petal petal--7"></span><span class="petal petal--8"></span>
+  </div>
+
+  <header class="site-header page-width">
+    <a class="brand" href="./index.html" aria-label="Về trang giới thiệu của Nguyễn Phi Long">
+      <span class="brand__mark">20</span><span class="brand__text">NPL <small>UEH · 20/11</small></span>
+    </a>
+    <a class="back-link" href="./index.html">Về trang giới thiệu <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero__copy reveal">
+        <p class="overline">Chào mừng ngày Nhà giáo Việt Nam</p>
+        <p class="date-mark" aria-label="Ngày 20 tháng 11">20 <span>·</span> 11</p>
+        <h1 id="hero-title">Gửi Thầy Cô,<br><em>bằng cả lòng biết ơn</em></h1>
+        <p class="hero__subtitle">Có những bài học khép lại trên trang vở, nhưng vẫn theo chúng em trên mỗi chặng đường.</p>
+        <div class="hero__actions">
+          <button class="primary-button" id="openLetter" type="button" aria-expanded="false" aria-controls="letterCard">Mở lời tri ân <span aria-hidden="true">→</span></button>
+          <button class="music-button" id="musicToggle" type="button" aria-pressed="false">Bật nhạc</button>
+        </div>
+        <p class="audio-status" id="audioStatus" aria-live="polite">Nhạc sẽ bắt đầu khi mở lời tri ân.</p>
+      </div>
+
+      <div class="hero__art reveal" aria-label="Minh họa quyển sách mở và cành hoa">
+        <div class="art-glow"></div>
+        <svg class="book-art" viewBox="0 0 520 420" role="img" aria-labelledby="bookTitle bookDesc">
+          <title id="bookTitle">Quyển sách mở dưới cành hoa</title>
+          <desc id="bookDesc">Minh họa trang nhã cho hành trình học tập và lòng biết ơn.</desc>
+          <path class="branch" d="M360 62c-42 44-66 91-68 142-3 64 24 111 82 151" />
+          <path class="stem" d="M339 125c-36-18-58-45-66-78M323 181c-42-8-74-25-95-52M322 231c-46 4-79-7-106-29" />
+          <g class="flower flower--one"><circle cx="271" cy="48" r="13"/><circle cx="255" cy="58" r="13"/><circle cx="266" cy="76" r="13"/><circle cx="283" cy="68" r="13"/><circle class="flower__core" cx="270" cy="63" r="8"/></g>
+          <g class="flower flower--two"><circle cx="227" cy="118" r="11"/><circle cx="213" cy="128" r="11"/><circle cx="224" cy="143" r="11"/><circle cx="240" cy="134" r="11"/><circle class="flower__core" cx="226" cy="130" r="7"/></g>
+          <g class="flower flower--three"><circle cx="215" cy="206" r="10"/><circle cx="201" cy="216" r="10"/><circle cx="211" cy="230" r="10"/><circle cx="226" cy="222" r="10"/><circle class="flower__core" cx="213" cy="217" r="6"/></g>
+          <path class="book-shadow" d="M72 333c85-27 145-24 188 7 44-31 107-34 190-7-83 29-148 34-190 8-44 26-106 21-188-8z" />
+          <path class="book-cover" d="M68 315c84-28 147-24 192 8v35c-49-30-111-34-192-6z" />
+          <path class="book-cover book-cover--right" d="M452 315c-84-28-147-24-192 8v35c49-30 111-34 192-6z" />
+          <path class="book-page" d="M73 307c81-25 140-21 187 10v32c-47-30-106-34-187-7z" />
+          <path class="book-page book-page--right" d="M447 307c-81-25-140-21-187 10v32c47-30 106-34 187-7z" />
+          <path class="book-line" d="M103 314c50-12 99-7 139 15M106 328c49-11 95-6 132 13M417 314c-50-12-99-7-139 15M414 328c-49-11-95-6-132 13" />
+          <path class="book-spine" d="M260 317v37" />
+        </svg>
+        <span class="art-caption">Mở một trang · Gửi một lời</span>
+      </div>
+    </section>
+
+    <section class="letter-section page-width" id="letter" aria-labelledby="letter-heading">
+      <div class="letter-card reveal" id="letterCard">
+        <div class="letter-card__top"><span>THƯ TRI ÂN</span><span>20 · 11 · 2026</span></div>
+        <div class="letter-content">
+          <p class="letter-greeting" id="letter-heading">Kính gửi quý Thầy Cô,</p>
+          <p>Vừa đi làm vừa trở lại giảng đường, em càng trân trọng thời gian được học và những điều Thầy Cô tận tâm truyền đạt. Có những kiến thức em cần thêm thời gian để hiểu, có những bài thực hành phải làm lại nhiều lần, nhưng mỗi bước tiến nhỏ đều giúp em có thêm niềm tin để tiếp tục.</p>
+          <p>Nhân ngày Nhà giáo Việt Nam 20/11, em xin gửi đến quý Thầy Cô lời cảm ơn chân thành. Cảm ơn Thầy Cô đã đồng hành, hướng dẫn và giúp em có cơ hội học hỏi, hoàn thiện bản thân.</p>
+          <p>Em xin gửi lời cảm ơn riêng đến thầy Tuấn trong môn Phát triển ứng dụng thương mại điện tử. Trang web nhỏ này là một phần thực hành của em, cũng là lời tri ân em muốn gửi đến Thầy và quý Thầy Cô bằng những điều mình đang học.</p>
+          <p>Kính chúc quý Thầy Cô luôn mạnh khỏe, bình an, hạnh phúc và có thật nhiều niềm vui trong công việc cũng như cuộc sống.</p>
+          <p>Em xin chân thành cảm ơn.</p>
+          <div class="signature"><strong>Nguyễn Phi Long</strong><span>Sinh viên UEH · MSSV: 87234020044</span><span>Ngày Nhà giáo Việt Nam 20/11/2026</span></div>
+        </div>
+      </div>
+      <div class="thank-you-row reveal">
+        <button class="secondary-button" id="thankButton" type="button">Gửi một lời cảm ơn <span aria-hidden="true">✦</span></button>
+        <p class="thank-message" id="thankMessage" aria-live="polite" hidden>Em cảm ơn Thầy Cô!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width"><span>Một lời tri ân, gửi bằng cả tấm lòng</span><span>Nguyễn Phi Long · UEH</span></footer>
+  <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
+  <audio id="thankYouAudio" src="./assets/audio/tri-an-thay-co.mp3" preload="metadata"></audio>
+</body>
+</html>
